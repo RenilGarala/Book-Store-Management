@@ -29,7 +29,7 @@ const user = new mongoose.Schema(
       default: "user",
       enum: ["user", "admin"],
     },
-    favourite: [{ type: mongoose.Types.ObjectId, ref: "books" }],
+    favourites: [{ type: mongoose.Types.ObjectId, ref: "books" }],
     cart: [{ type: mongoose.Types.ObjectId, ref: "books" }],
     orders: [{ type: mongoose.Types.ObjectId, ref: "order" }],
   },
